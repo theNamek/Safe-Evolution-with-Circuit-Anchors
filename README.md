@@ -9,7 +9,7 @@
 Current self-evolution algorithms for LLMs optimize purely for capability, causing models to *misevolve* — becoming powerful yet losing safety alignment. Inspired by how conserved Hox genes anchor biological body plans during evolution, we propose **Circuit-Anchored Evolution (CAE)**: identify a minimal safety circuit (<2% of features) via mechanistic interpretability, then anchor it during evolution while letting everything else adapt freely.
 
 <p align="center">
-  <img src="./Overview.pdf" width="600">
+  <img src="./Overview.jpg" width="600">
 </p>
 
 ## Citation
