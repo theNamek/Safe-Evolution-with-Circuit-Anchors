@@ -12,6 +12,13 @@ Current self-evolution algorithms for LLMs optimize purely for capability, causi
   <img src="./Overview.jpg" width="600">
 </p>
 
+## Key Results
+
+- 📉 **Unconstrained evolution is dangerous:** all models degrade from 96–99% to 70–75% safety score within 500 steps
+- 🔒 **CAE preserves safety above 95%** throughout evolution, while unconstrained evolution drops to ~70%
+- 🚀 **No capability trade-off:** CAE matches the capability gains of unconstrained evolution, unlike reward-model baselines which sacrifice capability for safety
+- ⚡ **Lower overhead than reward models:** only requires activation extraction through frozen transcoders, no additional forward pass through a safety reward model
+
 ## Citation
 
 If you find this work useful, please cite:
