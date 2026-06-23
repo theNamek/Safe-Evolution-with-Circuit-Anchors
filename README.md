@@ -4,9 +4,13 @@
 
 **Status:** Preprint. Under review.
 
-## Abstract
+## Overview
 
-In biological evolution, unconstrained mutation can lead to catastrophic outcomes: organisms may evolve enhanced capabilities while losing essential functions for survival. Nature's solution is *developmental constraints*, where core regulatory genes remain anchored while peripheral genes adapt freely. We observe that current self-evolution algorithms for large language models lack analogous constraints. They optimize purely for capability, implicitly assuming safety will be preserved. Our experiments reveal this assumption to be dangerously wrong: models can *misevolve* into powerful yet dangerous entities. Inspired by how Hox genes anchor body structure across 500 million years of evolution, we propose **Circuit-Anchored Evolution (CAE)**. Using mechanistic interpretability, we identify a tiny *safety circuit*, comprising less than 2% of model features, that causally mediates safety behaviors. We anchor this circuit during evolution, constraining it within a small displacement bound while allowing the remaining features to evolve freely. This mirrors the biological principle of *evolvability with constraint*: preserving what is essential while adapting what is peripheral. Experiments across 3 model families and two evolution algorithms demonstrate that CAE achieves superior safety preservation with minimal capability loss, substantially outperforming explicit reward-based constraints in both effectiveness and efficiency. Just as developmental constraints prevent biological evolution from producing nonviable organisms, circuit anchoring prevents model evolution from producing capable but dangerous systems.
+Current self-evolution algorithms for LLMs optimize purely for capability, causing models to *misevolve* — becoming powerful yet losing safety alignment. Inspired by how conserved Hox genes anchor biological body plans during evolution, we propose **Circuit-Anchored Evolution (CAE)**: identify a minimal safety circuit (<2% of features) via mechanistic interpretability, then anchor it during evolution while letting everything else adapt freely.
+
+<p align="center">
+  <img src="./Overview.pdf" width="600">
+</p>
 
 ## Citation
 
